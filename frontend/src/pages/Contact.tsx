@@ -21,12 +21,10 @@ type Tone = keyof typeof TONES;
 type FormField = "name" | "email" | "subject" | "message";
 
 const OPERATORS = [
-  { name: "Dr. K. Srinivas", role: "HOD, CSE-AIML", phone: "+91 98765 43210", tone: "cyan" },
-  { name: "Prof. M. Lakshmi", role: "Faculty Advisor", phone: "+91 91234 56780", tone: "pink" },
-  { name: "Mr. R. Venkatesh", role: "Academic Coordinator", phone: "+91 90123 45670", tone: "yellow" },
-  { name: "Arjun Reddy", role: "Technical Lead Organizer", phone: "+91 99432 78001", tone: "cyan" },
-  { name: "Priya Sharma", role: "Student Technical Lead", phone: "+91 94321 09876", tone: "pink" },
-  { name: "Karthik Nair", role: "Events Logistics Head", phone: "+91 93210 98765", tone: "yellow" },
+  { name: "Mr. B Srinivas", role: "Assist Prof., CSE-AIML", phone: "+91 9063605156", tone: "cyan" },
+  { name: "Mr. P Panduraju ", role: "Faculty Co ordinator", phone: "+91 8985847780", tone: "pink" },
+  { name: "Mr. K Shashikanth", role: "Host & Student Co ordinator", phone: "+91 9908604595", tone: "cyan" },
+  { name: "Mr. K Manoj ", role: "Student Co ordinator", phone: "+91 7013335234", tone: "pink" },
 ] as const;
 
 function Eyebrow({ children }: { children: ReactNode }) {
@@ -207,11 +205,6 @@ export default function Contact() {
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-cyan-400" strokeWidth={1.75} />
               Malla Reddy Deemed to be University, Maisammaguda, Dhulapally,
               Secunderabad, Telangana 500100
-            </p>
-
-            <p className="mt-3 flex items-center gap-2 text-[13px] text-cyan-300">
-              <Mail className="h-4 w-4 shrink-0 text-cyan-400" strokeWidth={1.75} />
-              aihack@mrdu.ac.in
             </p>
 
             {/* TODO: replace with your own venue hologram / map render */}
