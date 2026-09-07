@@ -265,7 +265,7 @@ export default function Home() {
           </p>
 
           <p className="home-hero-item home-hero-item-4 mx-auto mt-6 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
-            Department of CSE-AIML, Anurag Engineering College invites coders, hackers, and
+            Department of CSE-AIML, Mallareddy Engineering College invites coders, hackers, and
             architects to build alongside the brightest minds in the country.
           </p>
 
