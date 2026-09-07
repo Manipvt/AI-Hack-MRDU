@@ -9,7 +9,6 @@ import Faqs from "./pages/Faqs";
 import Home from "./pages/Home";
 import HowItWorks from "./pages/How-it-Works";
 import Prizes from "./pages/Prizes";
-import Sponsers from "./pages/Sponsers";
 import Timeline from "./pages/Timeline";
 
 const normalizePath = (path: string) => path.replace(/\/$/, "") || "/";
@@ -21,7 +20,6 @@ function PageContent({ path }: { path: string }) {
     case "/domains": return <Domains />;
     case "/timeline": return <Timeline />;
     case "/prizes": return <Prizes />;
-    case "/sponsors": return <Sponsers />;
     case "/faq": return <Faqs />;
     case "/contact": return <Contact />;
     case "/how-it-works":

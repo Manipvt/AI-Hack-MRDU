@@ -25,7 +25,6 @@ const NAV_LINKS = [
   { label: "Challenges", href: "/challenges" },
   { label: "Timeline", href: "/timeline" },
   { label: "Prizes", href: "/prizes" },
-  { label: "Sponsors", href: "/sponsors" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];

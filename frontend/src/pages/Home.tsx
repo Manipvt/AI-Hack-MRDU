@@ -12,6 +12,13 @@ import {
   Bot,
   ArrowRight,
 } from "lucide-react";
+import sponsorTwo from "../assets/s-2.jpeg";
+import sponsorThree from "../assets/s-3.jpeg";
+import sponsorFour from "../assets/s-4.jpeg";
+import sponsorFive from "../assets/s-5.jpeg";
+import sponsorSix from "../assets/s-6.jpeg";
+import sponsorSeven from "../assets/s-7.jpeg";
+import sponsorEight from "../assets/EDXcellence-logo.png";
 
 /**
  * Home.tsx — "AI HACK x MRDU" landing page
@@ -90,6 +97,17 @@ const SECTORS = [
 ];
 
 const SPONSORS = ["TechCorp", "NeuralNet", "CloudScale", "DevForge", "ByteWorks", "GridAI", "CoreStack"];
+
+const SPONSOR_LOGOS = [
+  { src: sponsorTwo, alt: "Sponsor logo 2" },
+  { src: sponsorThree, alt: "Sponsor logo 3" },
+  { src: sponsorFour, alt: "Sponsor logo 4" },
+  { src: sponsorFive, alt: "Sponsor logo 5" },
+  { src: sponsorSix, alt: "Sponsor logo 6" },
+  { src: sponsorSeven, alt: "Sponsor logo 7" },
+  { src: sponsorEight, alt: "Sponsor logo 8" },
+  
+];
 
 const colorMap = {
   cyan: {
@@ -310,6 +328,25 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* SPONSOR LOGO MARQUEE */}
+      <section className="sponsor-marquee border-b border-white/5 bg-[#05060b] py-8" aria-label="Sponsors">
+        <p className="mb-6 text-center font-mono text-[11px] tracking-[0.25em] text-slate-500">
+          IN COLLABORATION WITH
+        </p>
+        <div className="sponsor-marquee-fade overflow-hidden">
+          <div className="sponsor-marquee-track flex w-max items-center gap-5">
+            {[...SPONSOR_LOGOS, ...SPONSOR_LOGOS].map((logo, index) => (
+              <div
+                className="flex h-20 w-36 shrink-0 items-center justify-center rounded-sm border border-cyan-400/15 bg-white/[0.03] p-4 sm:h-24 sm:w-44"
+                key={`${logo.alt}-${index}`}
+              >
+                <img className="max-h-full w-full object-contain" src={logo.src} alt={logo.alt} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
