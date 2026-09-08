@@ -19,6 +19,7 @@ import sponsorFive from "../assets/s-5.jpeg";
 import sponsorSix from "../assets/s-6.jpeg";
 import sponsorSeven from "../assets/s-7.jpeg";
 import sponsorEight from "../assets/EDXcellence-logo.png";
+import sponsorNine from "../assets/s-8.jpeg";
 
 /**
  * Home.tsx — "AI HACK x MRDU" landing page
@@ -106,6 +107,7 @@ const SPONSOR_LOGOS = [
   { src: sponsorSix, alt: "Sponsor logo 6" },
   { src: sponsorSeven, alt: "Sponsor logo 7" },
   { src: sponsorEight, alt: "Sponsor logo 8" },
+  { src: sponsorNine, alt:"Sponsor logo 9"},
   
 ];
 
@@ -333,9 +335,9 @@ export default function Home() {
 
       {/* SPONSOR LOGO MARQUEE */}
       <section className="sponsor-marquee border-b border-white/5 bg-[#05060b] py-8" aria-label="Sponsors">
-        <p className="mb-6 text-center font-mono text-[11px] tracking-[0.25em] text-slate-500">
-          IN COLLABORATION WITH
-        </p>
+        <p className="mb-6 text-center font-mono text-sm font-semibold tracking-[0.25em] text-slate-300 sm:text-base">
+  IN COLLABORATION WITH
+</p>
         <div className="sponsor-marquee-fade overflow-hidden">
           <div className="sponsor-marquee-track flex w-max items-center gap-5">
             {[...SPONSOR_LOGOS, ...SPONSOR_LOGOS].map((logo, index) => (

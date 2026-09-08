@@ -244,13 +244,35 @@ export default function About() {
         <div className="mx-auto mt-8 grid max-w-5xl grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div>
             <h3 className="font-display text-xl text-white sm:text-2xl">
+              About the University
+            </h3>
+            <p className="mt-4 text-sm leading-relaxed text-slate-400">
+              Malla Reddy (MR) Deemed-to-be University, established in 2002 and formerly known as Malla Reddy Engineering College (Autonomous), is one of the premier institutions under the Malla Reddy Group of Institutions in Hyderabad, Telangana, India. The university has consistently demonstrated a strong commitment to academic excellence, research innovation, and holistic student development.
+
+Accredited by NBA and NAAC with an A++ Grade, approved by AICTE, and formerly affiliated with JNTU Hyderabad, the institution was recognized as a Deemed-to-be University in 2025 under Section 3 of The UGC Act, 1956.
+
+MRDU offers a comprehensive range of Undergraduate, Postgraduate, and Doctoral (Ph.D.) programs across its Schools of Computer Sciences & Technology, Electronics Sciences & Technology, Civil & Mechanical Sciences & Technology, and Management Sciences & Technology. With a strong focus on Artificial Intelligence, Smart Computing, and Digital Transformation, MRDU aligns perfectly with the vision and objectives of IC2AI 2027, reinforcing its role as a leading hub for innovation, research, and knowledge creation.
+            </p>
+          </div>
+
+          {/* TODO: replace with real campus photography */}
+          <div className="overflow-hidden rounded-md border border-white/10">
+            <img
+              src="/images/campus.jpg"
+              alt="Malla Reddy Deemed to be University campus"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+                <div className="mx-auto mt-8 grid max-w-5xl grid-cols-1 items-center gap-10 lg:grid-cols-2">
+          <div>
+            <h3 className="font-display text-xl text-white sm:text-2xl">
               Department of CSE-AIML
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
-              The Malla Reddy Deemed to be University Department of Computer Science and
-              Engineering (AIML) is at the cutting edge of artificial intelligence research
-              and practical application, bringing world-class infrastructure and
-              specialized model labs to this event.
+              About the Department
+The Department of Artificial Intelligence and Machine Learning (AI & ML) was established in 2020–21 with an intake of 60 students and has grown to 720 students today. The department offers a future-focused learning environment with advanced laboratories, Centres of Excellence, innovation and incubation facilities, and research infrastructure.
+Through hands-on projects, hackathons, coding competitions, internships, workshops, industry interactions, and research activities, students gain practical skills and industry exposure. Our mission is to nurture innovative, skilled, and industry-ready AI & ML professionals prepared to address real-world challenges.
             </p>
           </div>
 
