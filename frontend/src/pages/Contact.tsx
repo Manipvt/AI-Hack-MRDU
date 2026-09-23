@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent, type ReactNode } from "react";
-import { Phone, MapPin, Mail, User } from "lucide-react";
+import { Phone, MapPin, User } from "lucide-react";
 
 /**
  * Contact.jsx — "Get In Touch" page for AI HACK x MRDU
